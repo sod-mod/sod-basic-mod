@@ -20,6 +20,7 @@ public class SodBasicMod : ModBehaviour
 [HarmonyPatch(typeof(ZoneManager), "OnStart")]
 public static class ZoneManager_OnStart_Patch
 {
+    [Server]
     public static void Postfix()
     {
         Debug.Log("[SodBasicMod] ZoneManager OnStart");
