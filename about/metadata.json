@@ -1,0 +1,15 @@
+{
+  "id": "sod-mod-basic",
+  "name": "SOD Basic Mod",
+  "author": "Min",
+  "modVer": "1.0.0",
+  "assemblies": [
+    "sod_basic_mod.dll"
+  ],
+  "supportedGameVer": [
+    "1.0.0"
+  ],
+  "dependencies": [],
+  "loadBefore": [],
+  "loadAfter": []
+}

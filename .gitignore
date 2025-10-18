@@ -1,0 +1,5 @@
+bin/
+obj/
+sod_basic_mod.deps.json
+sod_basic_mod.dll
+sod_basic_mod.pdb
