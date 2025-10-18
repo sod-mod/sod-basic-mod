@@ -20,9 +20,13 @@ public class SodBasicMod : ModBehaviour
 [HarmonyPatch(typeof(ZoneManager), "OnStart")]
 public static class ZoneManager_OnStart_Patch
 {
-    [Server]
     public static void Postfix()
     {
+        // 서버에서만 작동함
+        if (!NetworkServer.active) {
+            return;
+        }
+
         Debug.Log("[SodBasicMod] ZoneManager OnStart");
         if (DewNetworkManager.continueData == null)
         {
